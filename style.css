@@ -1,0 +1,469 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+
+.page-banner {
+  position: relative;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.page-banner img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.page-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+.page-banner .banner-text {
+  position: relative;
+  z-index: 2;
+  padding: 0 20px;
+}
+
+/* Square product/preview image, fixed ratio */
+.square-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+
+#hero .hero-content {
+  z-index: 10;
+}
+
+.carousel-item {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  color: white !important;
+}
+
+.navbar {
+  z-index: 5;
+  background: darkgreen; 
+}
+
+/* Force all sections black */
+section, footer {
+  background-color: black !important;
+  color: white !important;
+}
+
+/* Override Bootstrap .bg-light */
+.bg-light {
+  background-color: black !important;
+  color: white !important;
+}
+
+.container {
+  color: white;
+}
+
+#games {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+#games .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#games .col-md-6 {
+  flex: 0 0 48%;
+}
+
+#games img {
+  width: 100%;
+  height: auto;
+}
+
+#about .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#about .col-md-6 {
+  padding: 15px;
+}
+
+#about .col-md-6 img {
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+#about h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#about p {
+  font-size: 1.1rem;
+}
+
+#why-choose .fa-2x {
+  margin-bottom: 20px;
+  color: #2ecc71;
+}
+
+#why-choose h4 {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+/* Shared "section" blocks used on About/Fields/Shop pages */
+.section {
+  padding: 60px 0;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.section ul li {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.section .container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section .image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+.gallery-images {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery-images img {
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+}
+
+#cta .btn {
+  background-color: mediumseagreen;
+  padding: 15px 30px;
+  color: darkgreen;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+#cta .btn:hover {
+  background-color: seagreen;
+}
+
+/* "Who we are"-style two-column rows */
+.split-row {
+  padding: 50px 0;
+}
+
+.split-row .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.split-row .text {
+  padding-right: 30px;
+}
+
+.split-row .image {
+  display: flex;
+  justify-content: center;
+}
+
+.split-row .image img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+/* Gallery section */
+.event-gallery {
+  margin-bottom: 60px;
+}
+
+.event-gallery h3 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.event-gallery .row {
+  margin-bottom: 20px;
+}
+
+.event-gallery .col-md-4 {
+  margin-bottom: 20px;
+}
+
+.event-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.event-gallery .btn {
+  background-color: mediumseagreen;
+  padding: 10px 20px;
+  color: darkgreen;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.event-gallery .btn:hover {
+  background-color: seagreen;
+}
+
+/* Map embed wrapper */
+.map-wrapper iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+  border-radius: 10px;
+}
+
+/* Rule / info cards already use Bootstrap's .card, just tint the border */
+.card {
+  background-color: black;
+  color: white;
+}
+
+.card .card-title {
+  color: mediumseagreen;
+}
+
+/* Shop product cards */
+.product-card {
+  background-color: black;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  height: 100%;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product-card .price {
+  color: mediumseagreen;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* FAQ */
+.faq-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.faq-item {
+  background-color: rgba(255, 255, 255, 0.06);
+  margin: 15px 0;
+  border-radius: 8px;
+  padding: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.faq-item:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.faq-question {
+  font-weight: bold;
+  color: mediumseagreen;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.faq-answer {
+  color: #ddd;
+  font-size: 16px;
+  padding-left: 20px;
+  border-left: 4px solid mediumseagreen;
+}
+
+/* Form Styles */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: whitesmoke;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: darklategray;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid silver;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: mediumseagreen;
+  box-shadow: 0 0 5px rgba(46, 204, 113, 0.5);
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: mediumseagreen;
+  color: darkgreen;
+  font-weight: bold;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: seagreen;
+}
+
+/* Media Queries */
+@media (min-width: 1200px) {
+  .split-row .row,
+  .section .row {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .split-row .row,
+  .section .row {
+    flex-direction: row;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .split-row .row,
+  .section .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .split-row .text {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .split-row .image img {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 20px 0;
+  }
+}
